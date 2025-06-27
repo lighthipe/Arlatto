@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heladería arlatto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: ##FFFDF6);
+      color: #333;
+    }
+    header {
+      background: #BEE3F8;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #6b2d2c;
+    }
+    nav {
+      background: #FFF4B2;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #6b2d2c;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #F8C3B0;;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background: #BEE3F8;;
+      color: #6b2d2c;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin-top: 20px;
+}
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+form button {
+  background-color: #f8c3b0;
+  color: #6b2d2c;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #f3ad96;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Heladería arlatto</h1>
+    <p>Auténtico sabor artesanal todo el año</p>
+  </header>
+
+  <nav>
+    <a href="#sabores">Sabores</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#trabajo">Trabajar con nosotros</a>
+    <a href="#pedido">Hacé tu pedido</a>
+  </nav>
+
+  <section id="sabores">
+    <h2>Nuestros Sabores</h2>
+    <div class="productos">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbERu--uowbkA_GIz80P5XfN9s1mZR9OUExQ&s" alt="Helado de frutos rojos">
+        <h3>Frutos rojos</h3>
+        <p>Con frutos naturales</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkeo7rMBAH70ZD4iY-shJZx78coCQb0fxYg&s" alt="Helado de Dulce de leche">
+        <h3>Dulce de leche</h3>
+        <p>Delicioso y cremoso</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYukfLBY-DCn3kgY_G3d41jJlgTmVi_fMH1A&s" alt="Helado de limón">
+        <h3>Limón</h3>
+        <p>Refrescante y cítrico</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      Somos un heladeria que nació nuestro deseo de llevar frescura y dulsura al mundo. Elaboramos nuestros helados con compromiso y dedicacion.
+    </p>
+    <p>
+      Nuestro compromiso es ofrecer calidad, atención cercana y una experiencia deliciosa en cada cucharada.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 Teléfono: 11 6702-3511</p>
+    <p>📩 Email: arlattohelados@gmail.com</p>
+    <p>📱 Instagram: @arlatto_helados</p>
+  </section>
+
+   <section id="trabajo">
+    <h2>¿Querés unirte a nuestro equipo?</h2>
+    <p>
+      En Arlatto helados siempre estamos buscando personas con buena onda, responsabilidad y pasión por el helado.
+    </p>
+    <p>
+      Si querés formar parte de nuestro equipo, envianos tu CV por email a:  
+      <strong><a href="arlattoheladoscv@gmail.com">arlattoheladoscv@gmail.com</a></strong>
+    </p>
+    <p>¡Nos encantaría conocerte!</p>
+  </section>
+  <section id="pedido">
+  <h2>Hacé tu pedido</h2>
+  <p>Completá el siguiente formulario y te contactamos para confirmar tu pedido:</p>
+  <form action="arlattohelados@gmail.com" method="POST">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" required><br><br>
+
+  <label for="sabor">Sabor favorito:</label><br>
+  <select id="sabor" name="sabor" required>
+    <option value="">Elegí una opción</option>
+    <option value="Frutos rojos">Frutos rojos</option>
+    <option value="Dulce de leche">Dulce de leche</option>
+    <option value="Limón">Limón</option>
+  </select><br><br>
+
+  <label for="tamaño">Tamaño:</label><br>
+  <select id="tamaño" name="tamaño" required>
+    <option value="">Elegí un tamaño</option>
+    <option value="1 bocha">1 bocha</option>
+    <option value="1/4 kg">1/4 kg</option>
+    <option value="1/2 kg">1/2 kg</option>
+    <option value="1 kg">1 kg</option>
+  </select><br><br>
+
+  <label for="contacto">WhatsApp o email:</label><br>
+  <input type="text" id="contacto" name="contacto" required><br><br>
+
+   <label for="domicilio">Domicilio o lugar de entrega:</label><br>
+  <textarea id="domicilio" name="domicilio" rows="2" required></textarea><br><br>
+
+  <label for="piso">Piso / Departamento (opcional):</label><br>
+  <input type="text" id="piso" name="piso" placeholder="Ej: 2° B"><br><br>
+
+  <button type="submit">Enviar pedido</button>
+</form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Heladería arlatto · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
